@@ -8,6 +8,9 @@
     --yellow-light: #f8f184;
     --blue-color : #19587d;
     --white-color : #fff;
+    --gradient-white : #eddebf96;
+    --gradient-red: #89000994;
+    --black-color: #000;
 
 
 }
@@ -34,7 +37,7 @@ button{
 body{
     background-color: black;
     color: white;
-    font-family: 'Space-Grotesk';
+    font-family: 'Space Grotesk';
     font-weight: 300;
 }
 
@@ -72,11 +75,147 @@ nav ul a:hover{
     background-position: top center;
     background-repeat: no-repeat;
     background-color: #19587d;
+    background-size: cover;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 250px;
 }
 
+#hero .titre{
+    margin: 60px 0;
+}
+
+.btn{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 20px;
+    padding: 20px 50px;
+    margin: 10px;
+    background: linear-gradient(
+        80deg,var(--gradient-white),var(--gradient-red)
+    );
+    box-shadow: var(--black-color)5px 5px 50px;
+}
+
+#hero .fleche{
+    display: block;
+    margin: 0 auto;
+    margin-top: 280px;
+}
+
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 60px;
+    top: 320px;
+}
+.scroll .social{
+    margin-top: 20px;
+}
+
+
 /* design de la section batman-personnage */
+
+#batman-cinema{
+    margin-top: 40px;
+}
 
 .batman-personnage{
     display: flex;
     justify-content: space-between;
+}
+
+/* mise en forme section */
+
+#batman-cinema .titre{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+#batman-cinema .description{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 100%;
+}
+
+#batman-cinema .personnage{
+    text-align: center;
+}
+
+#nemesis .titre{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+#nemesis .description{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 100%;
+}
+
+#nemesis .personnage{
+    text-align: center;
+}
+
+#allies .titre{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+#allies .description{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 100%;
+}
+
+#allies .personnage{
+    text-align: center;
+}
+
+#justice-league .titre{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+#justice-league .description{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 100%;
+}
+
+#justice-league .personnage{
+    text-align: center;
+}
+
+/* design de la partie multimedia */
+
+#multimedia .slider-multimedia{
+    display: flex;
+    width: 60%;
+    margin: 40px auto;
+}
+
+#multimedia .slider-image{
+    width: 100%;
+}
+
+#multimedia .slider-content{
+    padding: 20px;
+    background-color: #535252;
+}
+
+#multimedia p{
+    font-size: 12px;
 }
