@@ -11,15 +11,12 @@
     --gradient-white : #eddebf96;
     --gradient-red: #89000994;
     --black-color: #000;
-
-
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 h1{
     font-family: 'rajdhani';
     font-size: 36px;
@@ -40,33 +37,52 @@ body{
     font-family: 'Space Grotesk';
     font-weight: 300;
 }
+.up-bar{
+    border-top: #727272 3px solid;
+    position: relative;
+    top: 132px;
+    width: 85%;
+    left: 102px;
+}
+.left-bar{
+    border-left: #727272 3px solid;
+    position: relative;
+    top: 132px;
+    width: 85%;
+    left: 102px;
+}
+.right-bar{
+    border-right: #727272 3px solid;
+    position: relative;
+    top: 132px;
+    width: 85%;
+    left: 102px;
+}
 
 /* Design de la navigation */
-
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 30px;
 }
-
 ul{
     list-style: none;
-    
 }
-
 nav ul a{
     color: var(--white-color);
     font-size: 30px;
     font-weight: 500;
     font-family: 'rajdhani';
 }
-
-
-
 nav ul a:hover{
     color: var(--yellow-color)
 }
+
+.logo:hover{
+    filter: invert(4%) sepia(100%) saturate(2649%) hue-rotate(353deg) brightness(107%) contrast(104%);
+}
+
 /* design de la partie en-tête hero */
 
 #hero{
@@ -86,11 +102,9 @@ nav ul a:hover{
     margin: 0 auto;
     padding-top: 250px;
 }
-
 #hero .titre{
     margin: 60px 0;
 }
-
 .btn{
     text-decoration: none;
     color: var(--white-color);
@@ -102,13 +116,11 @@ nav ul a:hover{
     );
     box-shadow: var(--black-color)5px 5px 50px;
 }
-
 #hero .fleche{
     display: block;
     margin: 0 auto;
     margin-top: 280px;
 }
-
 .scroll {
     display: flex;
     flex-direction: column;
@@ -121,13 +133,11 @@ nav ul a:hover{
     margin-top: 20px;
 }
 
-
 /* design de la section batman-personnage */
 
 #batman-cinema{
     margin-top: 40px;
 }
-
 .batman-personnage{
     display: flex;
     justify-content: space-between;
@@ -140,82 +150,193 @@ nav ul a:hover{
     font-weight: bold;
     margin: 30px 0;
 }
-
 #batman-cinema .description{
     margin-bottom: 40px;
     text-align: justify;
     width: 100%;
 }
-
 #batman-cinema .personnage{
     text-align: center;
 }
-
 #nemesis .titre{
     text-transform: uppercase;
     font-weight: bold;
     margin: 30px 0;
 }
-
 #nemesis .description{
     margin-bottom: 40px;
     text-align: justify;
     width: 100%;
 }
-
 #nemesis .personnage{
     text-align: center;
 }
-
 #allies .titre{
     text-transform: uppercase;
     font-weight: bold;
     margin: 30px 0;
 }
-
 #allies .description{
     margin-bottom: 40px;
     text-align: justify;
     width: 100%;
 }
-
 #allies .personnage{
     text-align: center;
 }
-
 #justice-league .titre{
     text-transform: uppercase;
     font-weight: bold;
     margin: 30px 0;
 }
-
 #justice-league .description{
     margin-bottom: 40px;
     text-align: justify;
     width: 100%;
 }
-
 #justice-league .personnage{
     text-align: center;
 }
 
 /* design de la partie multimedia */
 
+#multimedia button{
+    position: relative;
+    top: 170px;
+    background: none;
+    border: none;
+}
+#multimedia button.right{
+    right: -95%;
+}
 #multimedia .slider-multimedia{
     display: flex;
     width: 60%;
     margin: 40px auto;
 }
-
 #multimedia .slider-image{
     width: 100%;
 }
-
 #multimedia .slider-content{
     padding: 20px;
-    background-color: #535252;
+    background-color: #413f3f;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
-
 #multimedia p{
     font-size: 12px;
+}
+#multimedia .yellow{
+    color: var(--yellow-color);
+}
+
+/* design de la patrie contact - formulaire */
+
+#contact{
+    background-color: darkslategray;
+    padding: 70px 0;
+}
+#contact .form{
+    width: 50%;
+    margin: 0 auto;
+}
+#contact h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+#contact .titre{
+    display: block;
+    margin: 28px 0;
+}
+#contact .form input[type='email'], textarea{
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 80%;
+    border-bottom: 2px solid rgb(129, 121, 121);
+    background-color: transparent;
+    padding: 10px 0;
+}
+#contact .news{
+    margin: 15px 0;
+    border-bottom: 2px solid rgb(129, 121, 121);
+    padding: 10px 0;
+}
+#contact .icon img{
+    transform: rotate(90deg);
+    width: 20px;
+}
+::placeholder{
+    color: #8f8e86;
+    font-size: 15px;
+}
+.btn-group{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.form input[type='radio']{
+    opacity: 0;
+}
+.btn-group label{
+    cursor: pointer;
+    border: 2px solid;
+    padding: 10px;
+        -o-border-image: linear-gradient(
+        69deg, red, blue
+        ) 1;
+        border-image: linear-gradient(
+        69deg, red, blue
+        ) 1;
+    font-size: 18px;
+}
+input[type='submit']{
+    display: block;
+    width: 230px;
+    margin: 25px auto;
+    padding: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 20px;
+    background: linear-gradient(
+        80deg,var(--gradient-white),var(--gradient-red)
+    );
+}
+/* design de la partie citations */
+
+#citations{
+    margin: 120px;
+}
+#citations .citation-carte{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+#citations .citation-auteur{
+    padding-top: 30px;
+    font-size: 15px;
+}
+#citations .guillemet-close{
+    float: right;
+}
+
+/* design du footer */
+
+footer{
+    margin-top: 200px;
+}
+footer .text-footer{
+    text-align: center;
+    font-size: 13px;
+}
+footer .social-footer{
+    text-align: center;
+    margin: 50px 0;
+}
+footer .social-item{
+    padding: 15px;
 }

@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <div class="up-bar"></div>
+    <div class="left-bar"></div>
+    <div class="right-bar"></div>
     <header>
         <nav class="container">
             <a href="index.html"> 
-                <img src="./assets/logo/logohome.png" alt="logo">
+                <img class="logo" src="./assets/logo/logohome.png" alt="logo">
             </a>
             <ul>
                 <li><a href="index.html">HOME</a></li>
@@ -19,6 +22,7 @@
         </nav>
     </header>
     <main>
+
         <!--les reseaux sociaux avec le scrolling-->
         <div class="scroll">
             <img src="./assets/Logo/logo_bat_flèche.png" alt="">
@@ -125,17 +129,17 @@
                         nettoyer sa ville de la criminalité qui y règne.</P>
                         <div class="batman-personnage">
                             <div class="batman-item">
-                                <img src="./assets/illustrations/Bathome8.png" alt="Michael Cain">
-                                <div class="personnage">
-                                    <h3>Alfred Pennyworth - Michael Cain</h3>
-                                    <p>(2006 - 2008 - 2012)</p>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="./assets/illustrations/Bathome9.png" alt="Zoé Kravitz">
+                                <img src="./assets/illustrations/Bathome8.png" alt="Zoé Kravitz">
                                 <div class="personnage">
                                     <h3>Catwoman - Zoé Kravitz</h3>
                                     <p>(2008)</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./assets/illustrations/Bathome9.png" alt="Michael Cain">
+                                <div class="personnage">
+                                    <h3>Alfred Pennyworth - Michael Cain</h3>
+                                    <p>(2006 - 2008 - 2012)</p>
                                 </div>
                             </div>
                             <div>
@@ -165,6 +169,7 @@
         <!-- section multimédia -->
         <section id="multimedia">
             <div class="container">
+                <h1 class="titre"><strong>MULTIMEDIA</strong></h1>
                 <button class="left">
                     <img src="./assets/Logo/icon_flèche_1.png" alt="">
                 </button>
@@ -179,7 +184,7 @@
                     <div class="slider-content">
                         <h2>ACTION, ADVENTURE</h2>
                         <h3>Batman Begins</h3>
-                        <p>IMDB: <span>8.2</span></p>
+                        <p>IMDB: <span class="yellow">8.2</span></p>
                         <p>Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément 
                         traumatisé, il grandit obnubilé par un désir de vengeance. La Ligue des ombres, une secte de 
                         guerriers ninja dirigée par Ra's al Ghul, se chargera de son entraînement. De retour chez lui à 
@@ -187,7 +192,7 @@
                         la lutte contre le crime sous le nom de Batman.</p>
                     </div>
                 </div>
-            </div>
+            <div class="container">
             <div class="image-bandeannonce">
                 <img src="./assets/illustrations/Bathome_ba2.png" alt="">
             </div>
@@ -195,66 +200,78 @@
 
 
          <!--Section formulaire-->
-         <div class="container">
-            <h2>PRENOS CONTACT</h2>
-            <form action="">
-                <label for="email">ADRESSE EMAIL</label> <br>
-                <input type="email" name="email" placeholder="email"> <br>
-                <label for="newsletter">NEWSLETTER</label><br> 
-                <label for="">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de 
-                Batman :></label> <br>
-                <input type="checkbox">
-                <br>
-                <div>
-                    <span>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</span>
-                    <img src="./assets/Logo/icon_flèche_2.png" alt="">
-                </div>
-                <div>
-                    <p>Souhaitez-vous recevoir des news</p>
-                </div>
-                <a href="">Des films</a>
-                <a href="">Des comics</a>
-                <a href="">De tout</a>
-                <p>MESSAGE</p>
-                <textarea name="" id="" cols="30" placeholder="Laissez un commentaire pour la communauté"></textarea>
-                <input type="submit" value="CONFIRMER">
-
-            </form>
-        </div>
+        <section id="contact">
+            <div class="form">
+                <h2>PRENOS CONTACT</h2>
+                <form action="">
+                    <label class="titre" for="email">ADRESSE EMAIL</label>
+                    <input type="email" name="email" placeholder="Adresse email">
+                    <label class="titre" for="newsletter">NEWSLETTER</label> 
+                    <label type="news">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de 
+                    Batman :</label>
+                    <input type="checkbox">
+                    <div>
+                        <span class="news">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</span>
+                        <span class="icon">
+                            <img src="./assets/Logo/icon_flèche_2.png" alt="">
+                        </span>
+                    </div>
+                    <div>
+                        <p class="news">Souhaitez-vous recevoir des news</p>
+                    </div>
+                    <div class="btn-group">
+                        <input type="radio" id="film">
+                        <label for="film">Des films</label>
+                        <input type="radio" id="comics">
+                        <label for="comics">Des comics</label>
+                        <input type="radio" id="tout">
+                        <label for="tout">De tout</label>
+                    </div>
+                    <p class="titre">MESSAGE</p>
+                    <textarea name="" id="" cols="30" placeholder="Laissez un commentaire pour la communauté"></textarea>
+                    <input type="submit" value="CONFIRMER">
+    
+                </form>
+            </div>
+        </section>
+        
          <!--Section citation-->
-        <section>
+        <section id="citations">
             <div class="container">
-                <div>
+                <div class="guillemet-open">
                     <img src="./assets/Logo/icon_guillemets_1.png" alt="">
                 </div>
-                <div>
-                    <p>La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles.</p>
+                <div class="citation-carte">
+                    <div>
+                    <p class="citation-text">La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles.</p>
+                    </div>
+                    <div class="citation-auteur">
+                        The Dark Knight : Le Chevalier Noir - <br>Le Joker à Batman (2008)
+                    </div>
                 </div>
-                <div>
-                    The Dark Knight : Le Chevalier Noir - Le Joker à Batman (2008)
-                </div>
-                <div>
+                <div class="guillemet-close">
                     <img src="./assets/Logo/icon_guillemets_2.png" alt="">
                 </div>
             </div>
         </section>
     </main>
+    <div class="clearfix"></div>
+
     <footer>
         <div class="container">
-            <div>
+            <div class="text-footer">
                 <img src="./assets/Logo/icon_WB.png" alt="">
-                <p>Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & 
-                    Snyder & Reeves</p>
+                <span>projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Reeves </span> 
             </div>
-            <div>
-                <a href="#">
+            <div class="social-footer">
+                <a href="#" class="social-item">
                     <img src="./assets/Logo/logo_sayna_white.png" alt="">
                     <img src="./assets/Logo/icon_x.png" alt="">
                     <img src="./assets/Logo/icon_DC.png" alt="">
                 </a>
-                <a href=""><img src="./assets/Logo/icon_facebook.png" alt=""></a>
-                <a href=""><img src="./assets/Logo/icon_ig.png" alt=""></a>
-                <a href=""><img src="./assets/Logo/icon_tw.png" alt=""></a>
+                <a href="" class="social-item"><img src="./assets/Logo/icon_facebook.png" alt=""></a>
+                <a href="" class="social-item"><img src="./assets/Logo/icon_ig.png" alt=""></a>
+                <a href="" class="social-item"><img src="./assets/Logo/icon_tw.png" alt=""></a>
             </div>
         </div>
     </footer>    
